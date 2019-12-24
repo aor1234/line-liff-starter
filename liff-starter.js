@@ -22,13 +22,12 @@ function initializeApp(data) {
 
             type: 'text',
             text: msg,
-            text: msg,
-            text: msg
+
 
         }, {
-            type: 'sticker',
-            packageId: '2',
-            stickerId: '144'
+            type: 'date',
+            text: msg,
+            text: msg
         }]).then(function () {
               window.alert("Message sent");
         }).catch(function (error) {
