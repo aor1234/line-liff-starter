@@ -15,8 +15,8 @@ function initializeApp(data) {
     document.getElementById('sendmessagebutton').addEventListener('click', function () {
         liff.sendMessages([{
 
-            type: 'name',
-             var a = document.getElementById('name').value
+            type: 'text',
+            text: "ซีเจ"
             
           
         }, {
