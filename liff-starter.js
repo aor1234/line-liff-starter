@@ -16,7 +16,8 @@ function initializeApp(data) {
         liff.sendMessages([{
 
             
-            var jobValue = document.getElementById('name').value
+            type: 'text',
+            text: "You've successfully sent a message! Hooray!"
            
           
         }, {
