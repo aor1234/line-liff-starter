@@ -10,6 +10,8 @@ function initializeApp(data) {
 
 
     // closeWindow call
+    
+    var test = document.getElementById('name').innerHTML;
 
     // sendMessages call
     document.getElementById('sendmessagebutton').addEventListener('click', function () {
@@ -17,7 +19,7 @@ function initializeApp(data) {
 
             
             type: 'text',
-            text: "You've successfully sent a message! Hooray!"
+            text: test
            
           
         }, {
