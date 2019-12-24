@@ -13,8 +13,6 @@ function initializeApp(data) {
 
     // sendMessages call
     document.getElementById('sendmessagebutton').addEventListener('click', function () {       
-        var msg = 'Hello World';
-        
         liff.sendMessages([{
             type: 'text',
             text: 'Hello World'
