@@ -6,12 +6,6 @@ window.onload = function (e) {
 
 function initializeApp(data) {
 
-    // openWindow call
-
-
-    // closeWindow call
-
-    // sendMessages call
     document.getElementById('sendmessagebutton').addEventListener('click', function () {
         
         var msg = document.getElementById('bchcode').value;
@@ -38,9 +32,4 @@ function initializeApp(data) {
         });
     });
 
-    // get access token
-   
-
-    // get profile call
-   
 }
