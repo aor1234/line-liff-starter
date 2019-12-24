@@ -16,7 +16,7 @@ function initializeApp(data) {
         liff.sendMessages([{
 
             type: 'text',
-            var a = document.getElementById('name').value
+            text: "You've successfully sent a message! Hooray!"
           
         }, {
             type: 'sticker',
