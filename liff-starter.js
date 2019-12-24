@@ -13,7 +13,7 @@ function initializeApp(data) {
 
     // sendMessages call
     document.getElementById('sendmessagebutton').addEventListener('click', function () {       
-        var msg = document.getElementById('bchcode').innerText;
+        var msg = document.getElementById('bchcode').value;
         
         liff.sendMessages([{
             type: 'text',
