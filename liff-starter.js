@@ -15,15 +15,15 @@ function initializeApp(data) {
     document.getElementById('sendmessagebutton').addEventListener('click', function () {
         
         var msg = document.getElementById('bchcode').value;
-        var msg = document.getElementById('date_start').value;
-        var msg = document.getElementById('date_stop').value;
+        var msg1 = document.getElementById('date_start').value;
+        var msg2 = document.getElementById('date_stop').value;
         
         liff.sendMessages([{
 
             type: 'text',
             text: msg,
-            text: msg,
-            text: msg
+            text: msg1,
+            text: msg2
             
 
         }]).then(function () {
