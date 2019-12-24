@@ -12,11 +12,10 @@ function initializeApp(data) {
     
 
     // sendMessages call
-    document.getElementById('sendmessagebutton').addEventListener('click', function () {
-        var msg = $("#name").val();
+    document.getElementById('sendmessagebutton').addEventListener('click', function () {       
         liff.sendMessages([{
             type: 'text',
-            text: msg
+            text: $("#bchcode").val();
         }, {
             type: 'sticker',
             packageId: '2',
