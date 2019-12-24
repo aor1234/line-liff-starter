@@ -5,7 +5,6 @@ window.onload = function (e) {
 };
 
 function initializeApp(data) {
-    $('#UserInfo').val(profile.displayName);
     // openWindow call
 
 
@@ -14,13 +13,10 @@ function initializeApp(data) {
 
     // sendMessages call
     document.getElementById('sendmessagebutton').addEventListener('click', function () {
+        var msg = $("#name").val();
         liff.sendMessages([{
-
-            
             type: 'text',
-            text: $('#UserInfo').val(profile.displayName);
-           
-          
+            text: msg
         }, {
             type: 'sticker',
             packageId: '2',
