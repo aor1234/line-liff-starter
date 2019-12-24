@@ -15,7 +15,7 @@ function initializeApp(data) {
     document.getElementById('sendmessagebutton').addEventListener('click', function () {
         liff.sendMessages([{
             type: 'text',
-            text: 'name'
+            text: document.getElementById("myText").value
         }, {
             type: 'sticker',
             packageId: '2',
