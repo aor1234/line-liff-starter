@@ -34,7 +34,7 @@ function initializeApp(data) {
             packageId: '2',
             stickerId: '144'
         }]).then(function () {
-              window.alert("ส่งข้อความเรียบร้อยแล้ว");
+              window.alert("Message sent");
         }).catch(function (error) {
                 window.alert("Error sending message: " + error);
         });
