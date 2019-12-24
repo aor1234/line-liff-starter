@@ -21,14 +21,14 @@ function initializeApp(data) {
         liff.sendMessages([{
 
             type: 'text',
-            text: 'ชื่อสาขา' + msg
+            text: 'ชื่อสาขา :' +' '+ msg
         },{
             type: 'text',
-            text: msg1
+            text: 'วันที่เริ่มต้น :'+' '+ msg1
         },
        {
             type: 'text',
-            text: msg2
+            text: 'วันที่สิ้นสุด :'+' '+ msg2
 
         }]).then(function () {
               window.alert("Message sent");
