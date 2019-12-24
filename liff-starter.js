@@ -17,7 +17,7 @@ function initializeApp(data) {
         
         liff.sendMessages([{
             type: 'text',
-            text: $("#bchcode").val();
+            text: msg
         }, {
             type: 'sticker',
             packageId: '2',
