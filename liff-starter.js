@@ -25,7 +25,7 @@ function initializeApp(data) {
 
 
         }, {
-            type: 'date',
+            type: 'text',
             text: fdate,
             text: ldate
         }]).then(function () {
