@@ -15,17 +15,16 @@ function initializeApp(data) {
     document.getElementById('sendmessagebutton').addEventListener('click', function () {
         
         var msg = document.getElementById('bchcode').value;
-        var fdate = document.getElementById('date_start').value;
-        var ldate = document.getElementById('date_stop').value;
+        var msg = document.getElementById('date_start').value;
+        var msg = document.getElementById('date_stop').value;
         
         liff.sendMessages([{
 
             type: 'text',
             text: msg,
-            text: fdate,
-            text: ldate,
-            
-          
+            text: msg,
+            text: msg
+
         }, {
             type: 'sticker',
             packageId: '2',
