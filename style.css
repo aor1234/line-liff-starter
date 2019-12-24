@@ -3,7 +3,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(120deg, #3E5151, #DECBA4);
+    background: #fff;
     overflow: hidden;
 
 }
