@@ -5,17 +5,20 @@ window.onload = function (e) {
 };
 
 function initializeApp(data) {
+
     // openWindow call
 
 
     // closeWindow call
-    
 
     // sendMessages call
-    document.getElementById('sendmessagebutton').addEventListener('click', function () {       
+    document.getElementById('sendmessagebutton').addEventListener('click', function () {
         liff.sendMessages([{
+
             type: 'text',
-            text: "Hello World"
+            text: "You've successfully sent a message! Hooray!"
+            
+          
         }, {
             type: 'sticker',
             packageId: '2',
@@ -33,4 +36,3 @@ function initializeApp(data) {
     // get profile call
    
 }
-
