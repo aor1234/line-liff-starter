@@ -16,7 +16,8 @@ function initializeApp(data) {
         liff.sendMessages([{
 
             type: 'text',
-            var kodlandi = escape(name);
+             var a = document.getElementById('name').value,
+            a = urlencode(a)
           
         }, {
             type: 'sticker',
