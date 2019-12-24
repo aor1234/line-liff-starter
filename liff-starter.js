@@ -17,7 +17,7 @@ function initializeApp(data) {
         
         liff.sendMessages([{
             type: 'text',
-            text: msg
+            text: 'Hello World'
         }, {
             type: 'sticker',
             packageId: '2',
