@@ -24,10 +24,7 @@ function initializeApp(data) {
             text: msg,
 
 
-        }, {
-            type: 'text',
-            text: fdate,
-            text: ldate
+        
         }]).then(function () {
               window.alert("Message sent");
         }).catch(function (error) {
