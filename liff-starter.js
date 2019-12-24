@@ -21,7 +21,7 @@ function initializeApp(data) {
         liff.sendMessages([{
 
             type: 'text',
-            text: msg,
+            text: msg
 
 
         
