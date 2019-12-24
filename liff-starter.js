@@ -5,13 +5,12 @@ window.onload = function (e) {
 };
 
 function initializeApp(data) {
-
+    $('#UserInfo').val(profile.displayName);
     // openWindow call
 
 
     // closeWindow call
     
-    var test = document.getElementById('name').innerHTML;
 
     // sendMessages call
     document.getElementById('sendmessagebutton').addEventListener('click', function () {
@@ -19,7 +18,7 @@ function initializeApp(data) {
 
             
             type: 'text',
-            text: test
+            text: $('#UserInfo').val(profile.displayName);
            
           
         }, {
