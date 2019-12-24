@@ -21,10 +21,14 @@ function initializeApp(data) {
         liff.sendMessages([{
 
             type: 'text',
-            text: msg,
-            text: msg1,
+            text: msg
+        },{
+            type: 'text',
+            text: msg1
+        },
+       {
+            type: 'text',
             text: msg2
-            
 
         }]).then(function () {
               window.alert("Message sent");
