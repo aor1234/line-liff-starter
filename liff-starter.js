@@ -15,7 +15,7 @@ function initializeApp(data) {
     document.getElementById('sendmessagebutton').addEventListener('click', function () {
         liff.sendMessages([{
 
-            type: 'text',
+            
             var jobValue = document.getElementById('name').value
            
           
