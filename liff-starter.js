@@ -22,7 +22,8 @@ function initializeApp(data) {
 
             type: 'text',
             text: 'ชื่อสาขา :' +' '+ msg
-        },{
+        },
+       {
             type: 'text',
             text: 'วันที่เริ่มต้น :'+' '+ msg1
         },
