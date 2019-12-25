@@ -15,7 +15,7 @@ function initializeApp(data) {
         liff.sendMessages([{
 
             type: 'text',
-            text: 'ชื่อสาขา :' +' '+ msg
+            text: 'ชื่อสาขา :' +' '+ msg + msg1 + msg2
         },
        {
             type: 'text',
