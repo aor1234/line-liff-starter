@@ -15,9 +15,17 @@ function initializeApp(data) {
         liff.sendMessages([{
 
             type: 'text',
-            text: 'ชื่อสาขา :' +' '+ msg \n + 'วันที่เริ่ม' + msg1 \n + 'วันที่สิ้น' + msg2
-        }
-     ]).then(function () {
+            text: 'ชื่อสาขา :' +' '+ msg 
+        },
+        {
+            type: 'text',
+            text: 'วันที่เริ่มต้น :' +' '+ msg1
+        },
+        {
+
+            type: 'text',
+            text: 'วันที่สิ้นสุด :' +' '+ msg2
+        }]).then(function () {
               window.alert("Message sent");
         }).catch(function (error) {
                 window.alert("Error sending message: " + error);
