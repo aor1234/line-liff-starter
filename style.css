@@ -60,7 +60,7 @@ h1 {
 
 }
 
-.regisbox input[type="submit"]
+.regisbox input[type="button"]
 {
     border: none;
     outline: none;
@@ -70,7 +70,7 @@ h1 {
     border-radius: 20px;
 }
 
-.regisbox input[type="submit"]:hover
+.regisbox input[type="button"]:hover
 {
     cursor: pointer;
     background: #DECBA4;
