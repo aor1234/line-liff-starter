@@ -1,10 +1,28 @@
-<form method="post" action="/Search">
-    <div class="container">
-        <label for="uname"><b>ชื่อสาขา</b></label>
-        <input type="text" placeholder="Enter Username" name="uname" required>
-        <label for="fdate"><b>วันที่เริ่มต้น</b></label>
-        <input type="date" placeholder="Enter firstdate" name="fdate" required>
-        <label for="ldate"><b>วันที่สิ้นสุด</b></label>
-        <input type="date" placeholder="Enter lastdate" name="ldate" required>
-        <button onclick="window.location.href = 'http://7f3efea3.ngrok.io/Search';">ค้นหา</button></div>
-</form>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ข้อมูลยอดขาย</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+
+    <form method="post" action="/Search">
+        <div class="container">
+            <label for="txtCode"><b>Name</b></label>
+            <input type="text" placeholder="Enter Branch" name="txtCode" required>
+
+            <label for="txtDateF"><b>วันที่เริ่มต้น</b></label>
+            <input type="date" name="txtDateF" required>
+
+            <label for="txtDateL"><b>วันที่สิ้นสุด</b></label>
+            <input type="date" name="txtDateL" required>
+
+
+            <button onclick="window.location.href = 'http://7f3efea3.ngrok.io/Search';">ค้นหา</button></div>
+
+        </div>
+
+    </form>
+</body>
