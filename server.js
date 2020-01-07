@@ -1,3 +1,9 @@
+window.onload = function (e) {
+    liff.init(function (data) {
+        initializeApp(data);
+    });
+};
+function initializeApp(data) {
 var express = require('express');
 var bodyParser = require('body-parser');
 var path = require('path');
@@ -59,3 +65,4 @@ app.post('/Search', function(req, res) {
 app.listen(port, function() {
     console.log('Node start on port : ' + port);
 });
+}
