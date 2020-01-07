@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.get('/', function(req, res) {
-    res.sendFile('/search.html', { root: __dirname });
+    res.sendFile('/index.html', { root: __dirname });
 
 });
 
