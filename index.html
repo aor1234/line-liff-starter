@@ -1,26 +1,10 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Liff Web</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-        <body>
-            <div class="regisbox">
-                <img src="https://cdn.icon-icons.com/icons2/582/PNG/512/man-2_icon-icons.com_55041.png" class="avatar">
-                <h1>กรอกข้อมูลของท่าน</h1>
-                <form>
-                    <p>ชื่อสาขา</p>
-                    <input type="text" name="uname" id="uname" placeholder="Enter you Branch Code">
-                    <p>วันที่เริ่มต้น</p>
-                    <input type="date" name="fdate" id="fdate" >
-                    <p>วันที่สิ้นสุด</p>
-                    <input type="date" name="ldate" id="ldate">
-                    <button type="button" onclick="window.location.href = "http://ff2eb6d4.ngrok.io/Search";">ค้นหา</button>
-                </form>
-            </div">
-        <script src="https://d.line-scdn.net/liff/1.0/sdk.js"></script>
-        <script src="liff-starter.js"></script>
-        </body>
-    </head>
-</html>
+<form method="post" action="/Search">
+    <div class="container">
+        <label for="uname"><b>ชื่อสาขา</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+        <label for="fdate"><b>วันที่เริ่มต้น</b></label>
+        <input type="date" placeholder="Enter firstdate" name="fdate" required>
+        <label for="ldate"><b>วันที่สิ้นสุด</b></label>
+        <input type="date" placeholder="Enter lastdate" name="ldate" required>
+        <button onclick="window.location.href = 'http://7f3efea3.ngrok.io/Search';">ค้นหา</button></div>
+</form>
