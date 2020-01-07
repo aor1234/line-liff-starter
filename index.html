@@ -12,13 +12,13 @@
     <form method="post" action="/Search">
         <div class="container">
             <label for="txtCode"><b>Name</b></label>
-            <input type="text" placeholder="Enter Branch" name="txtCode" required>
+            <input type="text" placeholder="Enter Branch" name="uname" id="uname" required>
 
             <label for="txtDateF"><b>วันที่เริ่มต้น</b></label>
-            <input type="date" name="txtDateF" required>
+            <input type="date" name="fdate" id="fdate" required>
 
             <label for="txtDateL"><b>วันที่สิ้นสุด</b></label>
-            <input type="date" name="txtDateL" required>
+            <input type="date" name="ldate" id="ldate" required>
 
 
             <button onclick="window.location.href = 'https://thawing-lowlands-94545.herokuapp.com/Search';">ค้นหา</button></div>
