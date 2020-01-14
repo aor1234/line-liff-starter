@@ -1,9 +1,3 @@
-window.onload = function (e) {
-    liff.init(function (data) {
-        initializeApp(data);
-    });
-};
-function initializeApp(data) {
 var express = require('express');
 var bodyParser = require('body-parser');
 var path = require('path');
@@ -11,22 +5,30 @@ var path = require('path');
 const port = 3000;
 
 var app = new express();
+
+app.use(function(req, res, next) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+    next();
+});
+
+app.use('/images', express.static(path.join(__dirname, 'images')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
     extended: true
 }));
 
+
 app.get('/', function(req, res) {
-    res.sendFile('/index.html', { root: __dirname });
+    res.sendFile('/search.html', { root: __dirname });
 
 });
 
 app.post('/superm', function(req, res, next) {
     res.send("MARK LEE LOVE AOR");
-
 });
-    
-app.post('/Search', function(req, res) {
+
+app.post('/search', function(req, res) {
 
     var sql = require('mssql');
     var config = {
@@ -38,20 +40,15 @@ app.post('/Search', function(req, res) {
             instanceName: 'sqlexpress'
         }
     };
-
     sql.close();
     sql.connect(config, function(err) {
         if (err) console.log('ERROR : ' + err);
-
-
 
         var query = 'SELECT XFsahGrand FROM TPOSTSalHD\
         WHERE XVBchCode = \'' + req.body.uname + '\'\
         AND XDSahDocDate BETWEEN \'' + req.body.fdate + '\'\
         AND  \'' + req.body.ldate + '\'\
         ';
-
-
         var request = new sql.Request();
         request.query(query, function(err, recordset) {
             if (err) console.log('ERROR : ' + err);
@@ -65,9 +62,6 @@ app.post('/Search', function(req, res) {
     });
 });
 
-
-
 app.listen(port, function() {
     console.log('Node start on port : ' + port);
 });
-}
