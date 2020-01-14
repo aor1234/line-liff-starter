@@ -21,6 +21,11 @@ app.get('/', function(req, res) {
 
 });
 
+app.post('/superm', function(req, res, next) {
+    res.send("MARK LEE LOVE AOR");
+
+});
+    
 app.post('/Search', function(req, res) {
 
     var sql = require('mssql');
